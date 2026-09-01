@@ -509,6 +509,27 @@ https://localhost:7121/swagger
 | Langage Front-end         | TypeScript            |
 | Langage Back-end          | C#                    |
 
+
+---
+
+## 🧪 Tests Unitaires & Qualité du Code
+
+Afin de garantir la fiabilité des calculs financiers et le respect des règles métier (notamment la gestion critique des stocks), une suite de tests unitaires automatisés a été mise en place côté Back-end en utilisant **xUnit** et **Entity Framework InMemory**.
+
+### ✅ Scénarios de tests couverts :
+*   **Calcul de la TVA (19%) :** Vérification que le Total TTC est correctement calculé à partir du HT.
+*   **Gestion du Stock :** Validation de la diminution automatique des stocks lors de la validation d'une commande.
+*   **Sécurité métier :** Vérification du blocage d'une commande si la quantité demandée dépasse le stock disponible.
+*   **Sécurité Authentification :** Test du bon hachage et de la vérification des mots de passe via **BCrypt**.
+*   **Dashboard :** Validation de l'exactitude des sommes globales (Chiffre d'affaires) pour les statistiques.
+
+### 🚀 Exécution des tests :
+Pour lancer la suite de tests et vérifier l'intégrité de l'application, exécutez la commande suivante à la racine du projet :
+
+```bash
+dotnet test MiniCommercial.Tests/MiniCommercial.Tests.csproj
+
+[Résultat des Tests](./screenshot/TEST.png)`
 ---
 
 # 👩‍💻 Auteur
