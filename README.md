@@ -529,9 +529,9 @@ Pour lancer la suite de tests et vérifier l'intégrité de l'application, exéc
 ```bash
 dotnet test MiniCommercial.Tests/MiniCommercial.Tests.csproj
 
-[Résultat des Tests](./screenshot/TEST.png)`
----
 
+---
+[Résultat des Tests](./screenshot/TEST.png)`
 # 👩‍💻 Auteur
 
 **Manar Gnichi**
