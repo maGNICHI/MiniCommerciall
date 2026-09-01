@@ -396,127 +396,63 @@ http://localhost:4200
 Si aucun compte de test n'est fourni, créer d'abord un compte via l'interface d'inscription ou l'endpoint d'authentification prévu par l'application.
 ![connexion](./screenshot/login.png)
 ![inscription](./screenshot/register.png)
+
 ---
 
 # 📊 Fonctionnalités principales
 
 ## 👥 Gestion des clients
-
-L'application permet de :
-
-* Ajouter un client
-* Consulter la liste des clients
-* Consulter les informations d'un client
-* Modifier un client
-* Supprimer un client
-
-### Capture — Liste des clients
-
 ![Liste des clients](./screenshot/clients.png)
 
 ### Capture — Création d'un client
-
-![Création d'un client](./screenshot/NouveauClient.png)
+![Création d'un client](./screenshot/nouveau-client.png)
 
 ---
 
 # 📦 Gestion des produits
-
-L'application permet de :
-
-* Ajouter un produit
-* Consulter les produits
-* Modifier un produit
-* Supprimer un produit
-* Gérer les prix
-* Gérer les quantités disponibles
-* Suivre le stock
-
-### Capture — Produits
-
 ![Liste des produits](./screenshot/products.png)
 
 ### Capture — Modification d'un produit
-
 ![Modification d'un produit](./screenshot/modif-products.png)
 
 ---
 
 # 🛒 Gestion des commandes
-
-L'application permet de :
-
-* Créer une commande
-* Consulter les commandes
-* Consulter le détail d'une commande
-* Associer une commande à un client
-* Gérer les produits commandés
-* Mettre à jour les quantités disponibles
-
-### Capture — Liste des commandes
-
-![Liste des commandes](./screenshot/commmandes.png)
+![Liste des commandes](./screenshot/commandes.png)
 
 ### Capture — Détail d'une commande
-
-![Détail de la commande](./screenshot/commande detaille.png)
+![Détail de la commande](./screenshot/commande-detaillee.png)
 
 # 📦 Dashboard
 ![Dashboard](./screenshot/dashboard.png)
-
 
 ---
 
 # 🧪 Tests de l'API avec Swagger
 
-Swagger permet de tester les principales opérations CRUD.
-
 ## 👤 GET — Liste des clients
-
-![API GET Clients](./screenshot/api clients.png)
-
----
+![API GET Clients](./screenshot/api-clients.png)
 
 ## 👤 POST — Ajouter un client
-
-![API POST Client](./screenshot/api post client.png)
-
----
+![API POST Client](./screenshot/api-post-client.png)
 
 ## 👤 PUT — Modifier un client
-
-![API PUT Client](./screenshot/api put client.png)
-
----
+![API PUT Client](./screenshot/api-put-client.png)
 
 ## 👤 GET — Client par ID
-
-![API GET Client By ID](./screenshot/API GET BY ID client.png)
-
----
+![API GET Client By ID](./screenshot/api-get-client-by-id.png)
 
 ## 📦 GET — Liste des produits
-
-![API GET Products](./screenshot/api get products.png)
-
----
+![API GET Products](./screenshot/api-get-products.png)
 
 ## 📦 DELETE — Supprimer un produit
-
-![API DELETE Product](./screenshot/API delete produit.png)
-
----
+![API DELETE Product](./screenshot/api-delete-produit.png)
 
 ## 🛒 GET — Liste des commandes
-
-![API GET Commandes](./screenshot/api get commmande.png)
-
----
+![API GET Commandes](./screenshot/api-get-commandes.png)
 
 ## 🛒 GET — Commande par ID
-
-![API GET Commande By ID](./screenshot/Api get by id commande.png)
-
+![API GET Commande By ID](./screenshot/api-get-commande-by-id.png)
 ---
 
 # 🔄 Démarrage rapide
