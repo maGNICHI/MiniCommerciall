@@ -21,7 +21,7 @@ export class LoginComponent {
   onSubmit() {
     if (this.loginForm.valid) {
       this.authService.login(this.loginForm.value).subscribe({
-        next: () => this.router.navigate(['/orders']),
+        next: () => this.router.navigate(['/dashboard']),
         error: () => this.error = "Email ou mot de passe incorrect."
       });
     }

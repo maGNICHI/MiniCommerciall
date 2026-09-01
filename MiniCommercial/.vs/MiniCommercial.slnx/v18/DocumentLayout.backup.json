@@ -23,10 +23,6 @@
       "RelativeMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|solutionrelative:minicommercial\\models\\dtos\\dashboardstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Migrations\\20260901090230_AddUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiniCommercial\\Migrations\\20260901090230_AddUserTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|c:\\users\\msi\\source\\repos\\minicommercial\\minicommercial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|solutionrelative:minicommercial\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -101,6 +97,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|c:\\users\\msi\\source\\repos\\minicommercial\\minicommercial\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|solutionrelative:minicommercial\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|c:\\users\\msi\\source\\repos\\minicommercial\\minicommercial\\migrations\\20260901090230_addusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{600F426D-CF88-E7FC-6028-B229279540AA}|MiniCommercial\\MiniCommercial.csproj|solutionrelative:minicommercial\\migrations\\20260901090230_addusertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -135,12 +135,11 @@
               "RelativeToolTip": "MiniCommercial\\Models\\DTOs\\DashboardStatsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T10:01:03.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T10:01:03.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 24,
               "Title": "20260901090230_AddUserTable.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Migrations\\20260901090230_AddUserTable.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Migrations\\20260901090230_AddUserTable.cs",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "MiniCommercial\\Migrations\\20260901090230_AddUserTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T09:02:31.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T09:02:31.096Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "MiniCommercial\\Services\\OrderService.cs",
               "ViewState": "AgIAAIwAAAAAAAAAAAAswJYAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:03:25.976Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T22:03:25.976Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "MiniCommercial\\Services\\IOrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:03:21.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T22:03:21.539Z"
             },
             {
               "$type": "Document",
@@ -187,12 +183,11 @@
               "RelativeToolTip": "MiniCommercial\\Controllers\\ClientsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:00:36.542Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T22:00:36.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Services\\ITokenService.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Services\\ITokenService.cs",
@@ -200,12 +195,11 @@
               "RelativeToolTip": "MiniCommercial\\Services\\ITokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:40:11.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:40:11.42Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Services\\TokenService.cs",
@@ -213,12 +207,11 @@
               "RelativeToolTip": "MiniCommercial\\Services\\TokenService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAwwCUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:40:40.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:40:40.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Controllers\\AuthController.cs",
@@ -226,12 +219,11 @@
               "RelativeToolTip": "MiniCommercial\\Controllers\\AuthController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAwwD8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:41:14.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:41:14.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Program.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Program.cs",
@@ -239,12 +231,11 @@
               "RelativeToolTip": "MiniCommercial\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:48:13.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:48:13.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Controllers\\OrdersController.cs",
@@ -252,12 +243,11 @@
               "RelativeToolTip": "MiniCommercial\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T15:43:35.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T15:43:35.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Controllers\\ProductsController.cs",
@@ -265,12 +255,11 @@
               "RelativeToolTip": "MiniCommercial\\Controllers\\ProductsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:00:20.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T22:00:20.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "AuthDtos.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\DTOs\\AuthDtos.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\DTOs\\AuthDtos.cs",
@@ -278,12 +267,11 @@
               "RelativeToolTip": "MiniCommercial\\Models\\DTOs\\AuthDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:37:16.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:37:16.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\User.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\User.cs",
@@ -291,12 +279,11 @@
               "RelativeToolTip": "MiniCommercial\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T08:35:53.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:35:53.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\appsettings.json",
               "RelativeDocumentMoniker": "MiniCommercial\\appsettings.json",
@@ -304,12 +291,11 @@
               "RelativeToolTip": "MiniCommercial\\appsettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-09-01T08:33:05.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T08:33:05.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Services\\ProductService.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Services\\ProductService.cs",
@@ -317,12 +303,11 @@
               "RelativeToolTip": "MiniCommercial\\Services\\ProductService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwB4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T22:00:24.754Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T22:00:24.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Data\\ApplicationDbContext.cs",
@@ -330,12 +315,11 @@
               "RelativeToolTip": "MiniCommercial\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAIwBEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T14:42:57.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T14:42:57.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "OrderDtos.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\DTOs\\OrderDtos.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\DTOs\\OrderDtos.cs",
@@ -347,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Product .cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\Product .cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\Product .cs",
@@ -359,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Client .cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\Client .cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\Client .cs",
@@ -371,7 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "IProductService.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Services\\IProductService.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Services\\IProductService.cs",
@@ -383,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "20260831161244_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Migrations\\20260831161244_InitialCreate.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Migrations\\20260831161244_InitialCreate.cs",
@@ -395,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "Order .cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\Order .cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\Order .cs",
@@ -407,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "OrderLine .cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Models\\OrderLine .cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Models\\OrderLine .cs",
@@ -419,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\MSI\\source\\repos\\MiniCommercial\\MiniCommercial\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "MiniCommercial\\Controllers\\WeatherForecastController.cs",
