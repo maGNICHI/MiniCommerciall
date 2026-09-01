@@ -1,0 +1,53 @@
+<div class="card shadow-sm border-0">
+  <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+    <h5 class="mb-0 fw-bold text-primary"><i class="bi bi-people-fill me-2"></i>Gestion des Clients</h5>
+    <button class="btn btn-primary btn-sm shadow-sm" routerLink="/clients/new">
+      <i class="bi bi-person-plus-fill"></i> Nouveau Client
+    </button>
+  </div>
+  
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-light">
+          <tr>
+            <th class="ps-4">Nom / Raison Sociale</th>
+            <th>Contact</th>
+            <th>Adresse</th>
+            <th>Créé le</th>
+            <th class="text-end pe-4">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let c of clients">
+            <td class="ps-4">
+              <div class="d-flex align-items-center">
+                <div class="avatar-sm bg-primary-subtle text-primary rounded-circle me-3 d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                  {{ c.name.charAt(0).toUpperCase() }}
+                </div>
+                <span class="fw-bold">{{ c.name }}</span>
+              </div>
+            </td>
+            <td>
+              <div class="small"><i class="bi bi-envelope text-muted me-1"></i>{{ c.email }}</div>
+              <div class="small"><i class="bi bi-telephone text-muted me-1"></i>{{ c.phone }}</div>
+            </td>
+            <td><small class="text-muted">{{ c.address }}</small></td>
+            <td><span class="badge bg-light text-dark border">{{ c.createdAt | date:'dd/MM/yyyy' }}</span></td>
+            <td class="text-end pe-4">
+              <button class="btn btn-outline-info btn-sm me-1" [routerLink]="['/clients/edit', c.id]" title="Modifier">
+                <i class="bi bi-pencil"></i>
+              </button>
+              <button class="btn btn-outline-danger btn-sm" (click)="deleteClient(c.id!)" title="Supprimer">
+                <i class="bi bi-trash"></i>
+              </button>
+            </td>
+          </tr>
+          <tr *ngIf="clients.length === 0 && !loading">
+            <td colspan="5" class="text-center py-5 text-muted">Aucun client trouvé.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

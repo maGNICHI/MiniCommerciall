@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm" *ngIf="authService.isLoggedIn()">
+  <div class="container">
+    <a class="navbar-brand fw-bold" routerLink="/">MiniCommercial</a>
+    <div class="navbar-nav">
+      <a class="nav-link" routerLink="/clients">Clients</a>
+      <a class="nav-link" routerLink="/products">Produits</a>
+      <a class="nav-link" routerLink="/orders">Commandes</a>
+    </div>
+    <div class="ms-auto d-flex align-items-center">
+      <span class="text-white me-3 small">Bonjour, {{ username }}</span>
+      <button class="btn btn-outline-light btn-sm" (click)="onLogout()">Déconnexion</button>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,89 @@
+<div class="row justify-content-center">
+  <div class="col-lg-10">
+     <form [formGroup]="orderForm" (ngSubmit)="submit()" class="card shadow border-0">
+  <div class="card-header bg-white py-3 d-flex justify-content-between">
+    <h5 class="mb-0 fw-bold text-primary">
+      <i class="bi bi-cart-plus me-2"></i>{{ isEditMode ? 'Modifier la Commande #' + orderId : 'Nouvelle Commande' }}
+    </h5>
+    <span class="badge bg-light text-dark border">Statut : {{ orderForm.get('statut')?.value }}</span>
+  </div>
+
+  <div class="card-body p-4">
+    <!-- Dans la section info client -->
+<div class="row mb-4">
+  <div class="col-md-6">
+    <label class="form-label fw-bold">Client</label>
+    <select formControlName="clientId" class="form-select">
+  <option value="">Sélectionner un client...</option>
+  <!-- Utilisez [ngValue] au lieu de [value] pour préserver le type (nombre ou objet) -->
+  <option *ngFor="let c of clients" [ngValue]="c.id">{{c.name}}</option>
+</select>
+  </div>
+
+  <!-- NOUVEAU : Sélection du Statut -->
+  <div class="col-md-6">
+  <label class="form-label fw-bold">Statut de la commande</label>
+  <select formControlName="status" class="form-select border-warning">
+    <option value="Brouillon">Brouillon</option>
+    <option value="Validee">Validée</option>
+    <option value="Annulee">Annulée</option>
+  </select>
+</div>
+</div>
+
+    <hr>
+
+    <h6 class="fw-bold mb-3 text-secondary">Produits commandés</h6>
+    <div formArrayName="lines">
+      <div *ngFor="let line of lines.controls; let i=index" [formGroupName]="i" class="row g-2 mb-2 align-items-end">
+        <div class="col-md-5">
+          <label *ngIf="i==0" class="small text-muted">Produit</label>
+          <select formControlName="productId" (change)="onProductChange(i)" class="form-select">
+            <option *ngFor="let p of products" [value]="p.id">{{p.name}} (Stock: {{p.stockQuantity}})</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label *ngIf="i==0" class="small text-muted">Quantité</label>
+          <input type="number" formControlName="quantity" (input)="calculateTotals()" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <label *ngIf="i==0" class="small text-muted">P.U HT</label>
+          <input type="text" formControlName="unitPrice" class="form-control-plaintext ps-2 fw-bold" readonly>
+        </div>
+        <div class="col-md-2">
+          <label *ngIf="i==0" class="small text-muted">Total Ligne</label>
+          <div class="form-control-plaintext ps-2 fw-bold text-primary">{{line.value.totalLine | currency:'EUR'}}</div>
+        </div>
+        <div class="col-md-1">
+          <button type="button" class="btn btn-link text-danger" (click)="removeLine(i)"><i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-outline-primary btn-sm mt-3" (click)="addLine()">
+      <i class="bi bi-plus"></i> Ajouter un produit
+    </button>
+
+    <!-- Récapitulatif -->
+    <div class="row mt-5 justify-content-end">
+      <div class="col-md-4">
+        <div class="d-flex justify-content-between mb-2">
+          <span class="text-muted">Total HT :</span>
+          <span class="fw-bold">{{totalHT | currency:'EUR'}}</span>
+        </div>
+        <div class="d-flex justify-content-between mb-3 border-top pt-2">
+          <span class="h5">Total TTC (19%) :</span>
+          <span class="h5 fw-bold text-success">{{totalTTC | currency:'EUR'}}</span>
+        </div>
+        <div class="d-flex gap-2">
+            <button type="button" class="btn btn-light w-50" routerLink="/orders">Annuler</button>
+            <button type="submit" class="btn btn-primary w-50 shadow-sm" [disabled]="orderForm.invalid">
+                {{ isEditMode ? 'Mettre à jour' : 'Enregistrer' }}
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div class="container mt-4">
+  <h2 class="mb-4 fw-bold"><i class="bi bi-speedometer2 me-2"></i>Tableau de Bord</h2>
+
+  <!-- Filtres -->
+  <div class="card shadow-sm border-0 mb-4">
+    <div class="card-body d-flex align-items-end gap-3">
+      <div>
+        <label class="form-label small fw-bold">Date Début</label>
+        <input type="date" [(ngModel)]="startDate" class="form-control">
+      </div>
+      <div>
+        <label class="form-label small fw-bold">Date Fin</label>
+        <input type="date" [(ngModel)]="endDate" class="form-control">
+      </div>
+      <button class="btn btn-primary" (click)="onFilter()">
+        <i class="bi bi-filter"></i> Filtrer
+      </button>
+    </div>
+  </div>
+
+  <!-- Cartes de Statistiques -->
+  <div class="row g-4" *ngIf="stats">
+    <div class="col-md-3">
+      <div class="card bg-primary text-white border-0 shadow">
+        <div class="card-body">
+          <h6 class="text-uppercase small">Total Clients</h6>
+          <h2 class="fw-bold">{{stats.totalClients}}</h2>
+          <i class="bi bi-people position-absolute top-50 end-0 translate-middle opacity-25 h1"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-success text-white border-0 shadow">
+        <div class="card-body">
+          <h6 class="text-uppercase small">Total Commandes</h6>
+          <h2 class="fw-bold">{{stats.totalOrders}}</h2>
+          <i class="bi bi-cart-check position-absolute top-50 end-0 translate-middle opacity-25 h1"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-warning text-dark border-0 shadow">
+        <div class="card-body">
+          <h6 class="text-uppercase small">Chiffre d'Affaires (TTC)</h6>
+          <h2 class="fw-bold">{{stats.totalRevenue | currency:'TND'}}</h2>
+          <i class="bi bi-cash-stack position-absolute top-50 end-0 translate-middle opacity-25 h1"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card bg-info text-white border-0 shadow">
+        <div class="card-body">
+          <h6 class="text-uppercase small">Articles en Stock</h6>
+          <h2 class="fw-bold">{{stats.productsInStock}}</h2>
+          <i class="bi bi-box-seam position-absolute top-50 end-0 translate-middle opacity-25 h1"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

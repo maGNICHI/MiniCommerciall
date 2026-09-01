@@ -1,0 +1,28 @@
+@media print {
+  /* Cache tout sauf la carte de la facture */
+  body * {
+    visibility: hidden;
+  }
+  .card, .card * {
+    visibility: visible;
+  }
+  .card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .d-print-none {
+    display: none !important;
+  }
+}
+
+.card {
+  border-radius: 15px;
+}
+
+h2 {
+  letter-spacing: 2px;
+}

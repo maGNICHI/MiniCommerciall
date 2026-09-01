@@ -1,0 +1,37 @@
+<div class="card shadow-sm border-0">
+  <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+    <h5 class="mb-0 fw-bold text-primary">Gestion des Produits</h5>
+    <button class="btn btn-success btn-sm" routerLink="/products/new">
+      <i class="bi bi-plus-lg"></i> Nouveau Produit
+    </button>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-hover align-middle mb-0">
+      <thead class="table-light">
+        <tr>
+          <th>Référence</th>
+          <th>Désignation</th>
+          <th>Prix HT</th>
+          <th>Stock</th>
+          <th class="text-end">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of products">
+          <td><span class="badge bg-light text-dark border">{{p.reference}}</span></td>
+          <td class="fw-medium">{{p.name}}</td>
+          <td>{{p.unitPriceHT | currency:'TND'}}</td>
+          <td>
+            <span class="badge" [ngClass]="p.stockQuantity > 5 ? 'bg-success-subtle text-success' : 'bg-danger-subtle text-danger'">
+              {{p.stockQuantity}} en stock
+            </span>
+          </td>
+          <td class="text-end">
+            <button class="btn btn-outline-primary btn-sm me-1" [routerLink]="['/products/edit', p.id]"><i class="bi bi-pencil"></i></button>
+            <button class="btn btn-outline-danger btn-sm" (click)="delete(p.id!)"><i class="bi bi-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

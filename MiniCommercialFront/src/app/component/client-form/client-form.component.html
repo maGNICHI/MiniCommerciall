@@ -1,0 +1,76 @@
+<div class="container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card shadow-sm border-0">
+        <!-- En-tête -->
+        <div class="card-header bg-white py-3">
+          <h5 class="mb-0 text-primary fw-bold">
+            <i class="bi" [ngClass]="isEditMode ? 'bi-person-gear' : 'bi-person-plus'"></i>
+            {{ isEditMode ? 'Modifier le Client' : 'Nouveau Client' }}
+          </h5>
+        </div>
+
+        <!-- Corps du formulaire -->
+        <div class="card-body p-4">
+          <div *ngIf="loading && isEditMode" class="text-center py-4">
+            <div class="spinner-border text-primary" role="status"></div>
+          </div>
+
+          <form [formGroup]="clientForm" (ngSubmit)="onSubmit()" *ngIf="!loading || !isEditMode">
+            <div class="row">
+              
+              <!-- Nom -->
+              <div class="col-md-12 mb-3">
+                <label class="form-label fw-bold">Nom Complet / Raison Sociale</label>
+                <input type="text" formControlName="name" class="form-control"
+                       [ngClass]="{'is-invalid': clientForm.get('name')?.touched && clientForm.get('name')?.invalid}"
+                       placeholder="Ex: Jean Dupont ou SARL Innov">
+                <div class="invalid-feedback">Le nom est requis (min. 3 caractères).</div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Email</label>
+                <input type="email" formControlName="email" class="form-control"
+                       [ngClass]="{'is-invalid': clientForm.get('email')?.touched && clientForm.get('email')?.invalid}"
+                       placeholder="exemple@mail.com">
+                <div class="invalid-feedback">Veuillez entrer une adresse email valide.</div>
+              </div>
+
+              <!-- Téléphone -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label fw-bold">Téléphone</label>
+                <input type="text" formControlName="phone" class="form-control"
+                       [ngClass]="{'is-invalid': clientForm.get('phone')?.touched && clientForm.get('phone')?.invalid}"
+                       placeholder="+216 ...">
+                <div class="invalid-feedback">Un numéro de téléphone valide est requis.</div>
+              </div>
+
+              <!-- Adresse -->
+              <div class="col-md-12 mb-4">
+                <label class="form-label fw-bold">Adresse Complète</label>
+                <textarea formControlName="address" class="form-control" rows="3"
+                          [ngClass]="{'is-invalid': clientForm.get('address')?.touched && clientForm.get('address')?.invalid}"
+                          placeholder="Rue, Code Postal, Ville..."></textarea>
+                <div class="invalid-feedback">L'adresse est requise (min. 5 caractères).</div>
+              </div>
+
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="d-flex justify-content-end gap-2 border-top pt-3">
+              <button type="button" class="btn btn-light" routerLink="/clients">
+                Annuler
+              </button>
+              <button type="submit" class="btn btn-primary px-4 shadow-sm" [disabled]="loading">
+                <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+                <i class="bi bi-check-lg me-1" *ngIf="!loading"></i>
+                {{ isEditMode ? 'Mettre à jour' : 'Enregistrer le client' }}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

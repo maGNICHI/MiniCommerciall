@@ -1,0 +1,52 @@
+<div class="card shadow border-0">
+  <div class="card-header bg-white py-3">
+    <h5 class="mb-0 text-primary fw-bold">
+      {{ isEditMode ? 'Modifier le Produit' : 'Nouveau Produit' }}
+    </h5>
+  </div>
+  <div class="card-body p-4">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <div class="row">
+        <!-- CHAMP RÉFÉRENCE -->
+  <div class="col-md-4 mb-3">
+    <label class="form-label fw-bold">Référence Produit</label>
+    <input type="text" formControlName="reference" class="form-control" 
+           placeholder="Ex: REF-001"
+           [ngClass]="{'is-invalid': productForm.get('reference')?.touched && productForm.get('reference')?.invalid}">
+    <div class="invalid-feedback">La référence est obligatoire.</div>
+  </div>
+
+  <div class="col-md-8 mb-3">
+    <label class="form-label fw-bold">Nom du produit</label>
+    <input type="text" formControlName="name" class="form-control">
+  </div>
+
+        <div class="col-md-4 mb-3">
+          <label class="form-label">Prix Unitaire HT</label>
+          <div class="input-group">
+            <input type="number" formControlName="unitPriceHT" class="form-control">
+            <span class="input-group-text">€</span>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-3">
+          <label class="form-label">Description</label>
+          <textarea formControlName="description" class="form-control" rows="2"></textarea>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <label class="form-label">Quantité en Stock</label>
+          <input type="number" formControlName="stockQuantity" class="form-control">
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-end gap-2">
+        <button type="button" class="btn btn-light" routerLink="/products">Annuler</button>
+        <button type="submit" class="btn btn-primary" [disabled]="productForm.invalid || loading">
+  <span *ngIf="loading" class="spinner-border spinner-border-sm me-1"></span>
+  Enregistrer
+</button>
+      </div>
+    </form>
+  </div>
+</div>
